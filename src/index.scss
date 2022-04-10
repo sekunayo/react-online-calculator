@@ -1,0 +1,43 @@
+@import "./styles/_variables.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  background-color: $background;
+  min-height: 100vh;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+}
+
+input,
+button {
+  border: none;
+  outline: 0px;
+}

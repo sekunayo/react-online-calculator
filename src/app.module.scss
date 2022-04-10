@@ -1,0 +1,69 @@
+@import "./styles/variables";
+
+.app__calculator {
+  background-color: $col-dark;
+  height: auto;
+  border-radius: 30px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+
+  &-result {
+    height: 50px !important;
+    padding: 0px 30px !important;
+
+    & h2 {
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      color: $col-white;
+    }
+  }
+
+  &-middle,
+  &-result {
+    height: 70px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-display {
+    color: $col-white;
+    padding: 2px;
+  }
+
+  &-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-bottom {
+    background-color: $col-blueBlack;
+    height: auto;
+    border-radius: 30px;
+    padding: 30px;
+    width: auto;
+
+    &-buttons {
+      width: fit-content;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(auto-fit, auto);
+      grid-gap: 20px;
+    }
+  }
+}

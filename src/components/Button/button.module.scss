@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+
+.button {
+  background-color: rgba($col-blueBlack, 0.5);
+  border-radius: 5px;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: $col-white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.4rem;
+
+  &[data-operator="other"] {
+    color: $col-mint;
+  }
+
+  &[data-operator="arithmetic"] {
+    color: $col-coral;
+  }
+}
